@@ -1,0 +1,5 @@
+.test {
+  background-image: url(http://a.com/images/logo.gif);
+  color: #f00;
+  background: url("http://a.b.c/images/logo.jpg") no-repeat;
+}

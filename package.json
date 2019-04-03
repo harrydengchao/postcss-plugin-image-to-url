@@ -1,0 +1,28 @@
+{
+  "name": "postcss-plugin-image-to-url",
+  "version": "0.1.0-beta.1",
+  "description": "PostCSS plugin image-to-url",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "postcss-plugin-image-to-url"
+  ],
+  "scripts": {
+    "tag": "bump prompt",
+    "test": "node index.test.js"
+  },
+  "author": "dengchao2056@126.com",
+  "license": "MIT",
+  "repository": "harrydengchao/postcss-plugin-image-to-url",
+  "bugs": {
+    "url": "https://github.com/harrydengchao/postcss-plugin-image-to-url/issues"
+  },
+  "homepage": "https://github.com/harrydengchao/postcss-plugin-image-to-url",
+  "dependencies": {
+    "postcss": "^7.0.6"
+  },
+  "devDependencies": {
+    "version-bump-prompt": "^5.0.1"
+  }
+}
