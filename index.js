@@ -9,7 +9,7 @@ module.exports = postcss.plugin('postcss-plugin-image-to-url', function (opts) {
 
   return function (root, result) {
     // Transform CSS AST here
-    if (!opts.disable || !opts.localBaseDir || !opts.remoteBaseLink) {
+    if (!opts.disable && opts.localBaseDir && opts.remoteBaseLink) {
       root.walkRules(function(rule) {
         rule.walkDecls(/^background.*/, function(decl) {
           var reg =new RegExp(`(.*url[(]{1}['"]?).*${opts.localBaseDir}(.+['"]?[)]{1}.*)`)
